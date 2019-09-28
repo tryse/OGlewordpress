@@ -23,33 +23,91 @@
 </head>
 
 <body <?php body_class(); ?>>
-		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'blank-zip'); ?></a>
-			<nav class="navbar navbar-expand-lg">
-				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">OGle</a>
-				
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'blank-zip'); ?></a>
+	<nav class="navbar navbar-expand-lg">
+		<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">OGle</a>
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="<?php echo esc_url( home_url( '/' ) ); ?>">Home <span class="sr-only">(current)</span></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item dropdown">
+					<a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Dropdown</a>
+					<ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow">
+						<li><a href="#" class="dropdown-item">Some action </a></li>
+						<li><a href="#" class="dropdown-item">Some other action</a></li>
+
+						<li class="dropdown-divider"></li>
+
+						<!-- Level two dropdown-->
+						<li class="dropdown-submenu">
+							<a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Hover for action</a>
+							<ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+								<li>
+									<a tabindex="-1" href="#" class="dropdown-item">level 2</a>
+								</li>
+
+								<!-- Level three dropdown-->
+								<li class="dropdown-submenu">
+									<a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
+									<ul aria-labelledby="dropdownMenu3" class="dropdown-menu border-0 shadow">
+										<li><a href="#" class="dropdown-item">3rd level</a></li>
+										<li><a href="#" class="dropdown-item">3rd level</a></li>
+									</ul>
+								</li>
+								<!-- End Level three -->
+
+								<li><a href="#" class="dropdown-item">level 2</a></li>
+								<li><a href="#" class="dropdown-item">level 2</a></li>
+							</ul>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="http://localhost:8080/jerick/about-us/">About Us</a>
-						</li>
-						<li class="nav-item ">
-							<a class="nav-link ml-auto" href="http://localhost:8080/jerick/contact-us/"> Contact Us</a>
-						</li>
+						<!-- End Level two -->
 					</ul>
-				</div>
-			</nav>
-		<header id="masthead" class="site-header">
-			
-		</header><!-- #masthead -->
-		<div id="page" class="site container">
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="<?php echo esc_url(home_url('/')); ?>">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="http://localhost:8080/OGlewordpress/about-us/">About Us</a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link ml-auto" href="http://localhost:8080/OGlewordpress/contact-us/"> Contact Us</a>
+				</li>
+			</ul>
+		</div>
+
+	</nav>
+	<header id="masthead" class="site-header">
+
+	</header><!-- #masthead -->
+	<div id="page" class="site container">
 
 		<div id="content" class="site-content">
 
 		</div>
+
+
+		<script type="text/javascript">
+		jQuery(function($) {
+				// ------------------------------------------------------- //
+				// Multi Level dropdowns
+				// ------------------------------------------------------ //
+				$("ul.dropdown-menu [data-toggle='dropdown']").on("click", function(event) {
+					event.preventDefault();
+					event.stopPropagation();
+
+					$(this).siblings().toggleClass("show");
+
+
+					if (!$(this).next().hasClass('show')) {
+						$(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+					}
+					$(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+						$('.dropdown-submenu .show').removeClass("show");
+					});
+
+				});
+			});
+		</script>

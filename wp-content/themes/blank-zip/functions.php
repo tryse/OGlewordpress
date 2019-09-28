@@ -110,7 +110,8 @@ add_action( 'after_setup_theme', 'blank_zip_content_width', 0 );
 function blank_zip_scripts() {
 	//boostrap
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/dist/css/bootstrap.min.css');
-	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/dist/css/editor-style.css');
+	wp_enqueue_style( 'editor', get_template_directory_uri() . '/dist/css/editor-style.css');
+	wp_enqueue_style( 'awesome', get_template_directory_uri() . '/dist/css/animate.min.css');
 	//font awesome
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/fonts/font-awesome/css/fontawesome.min.css');
 
@@ -136,8 +137,11 @@ function blank_zip_scripts() {
 	wp_enqueue_script( 'blank-zip-bootstrap', get_template_directory_uri() . '/src/js/bootstrap.min.js', 
 	array('jquery'),'20170915', true);
 
-	wp_enqueue_script( 'blank-zip-bootstrap-hover', get_template_directory_uri() . '/src/js/bootstrap-hover.js',
-	array('jquery'),'20170115', true);
+	wp_enqueue_script( 'blank-zip-jquery', get_template_directory_uri() . '/src/js/jquery-3.3.1.slim.min.js', 
+	array('jquery'),'20170915', true);
+
+	wp_enqueue_script( 'blank-zip-jquery', get_template_directory_uri() . '/src/js/bootstrap.bundle.min.js', 
+	array('jquery'),'20170915', true);
 
 	wp_enqueue_script( 'blank-zip-nav-scroll', get_template_directory_uri() . '/src/js/nav-scroll.js',
 	array('jquery'),'20170115', true);

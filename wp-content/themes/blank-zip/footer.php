@@ -15,7 +15,6 @@
 </div><!-- #content -->
 
 <footer class="footer-distributed">
-
 	<div class="footer-left text-center">
 
 		<p class="footer-company-name">Copyright &copy; OGle.inc.2019</p>

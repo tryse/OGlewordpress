@@ -24,8 +24,8 @@
 
 <body <?php body_class(); ?>>
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'blank-zip'); ?></a>
-	<nav class="navbar navbar-expand-lg">
-		<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">OGle</a>
+	<nav class="navbar navbar-expand-lg" stle="background-color:rgb(0,0,0)">
+		<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><img src="http://localhost:8080/OGlewordpress/wp-content/uploads/2019/10/logo.jpg"></a>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -36,8 +36,10 @@
 				<li class="nav-item dropdown">
 					<a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Dropdown</a>
 					<ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow">
-						<li><a href="#" class="dropdown-item">Some action </a></li>
-						<li><a href="#" class="dropdown-item">Some other action</a></li>
+						<li><a href="#" class="dropdown-item"> BAGS</a></li>
+						<li><a href="#" class="dropdown-item"> POLO</a></li>
+						<li><a href="#" class="dropdown-item"> WRIST WATCH</a></li>
+						<li><a href="#" class="dropdown-item"> T-ShIRTS</a></li>
 
 						<li class="dropdown-divider"></li>
 
@@ -53,8 +55,8 @@
 								<li class="dropdown-submenu">
 									<a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
 									<ul aria-labelledby="dropdownMenu3" class="dropdown-menu border-0 shadow">
-										<li><a href="#" class="dropdown-item">3rd level</a></li>
-										<li><a href="#" class="dropdown-item">3rd level</a></li>
+										<li><a href="#" class="dropdown-item"></a></li>
+										<li><a href="#" class="dropdown-item"></a></li>
 									</ul>
 								</li>
 								<!-- End Level three -->
@@ -67,26 +69,36 @@
 					</ul>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link" href="<?php echo esc_url(home_url('/')); ?>">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="<?php echo esc_url(home_url('/')); ?>"> Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="http://localhost:8080/OGlewordpress/about-us/">About Us</a>
+					<a class="nav-link" href="http://localhost:8080/OGlewordpress/about-us/"> About Us</a>
 				</li>
 				<li class="nav-item ">
-					<a class="nav-link ml-auto" href="http://localhost:8080/OGlewordpress/contact-us/"> Contact Us</a>
+					<a class="nav-link" href="http://localhost:8080/OGlewordpress/contact-us/"> Contact Us</a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link" href="http://localhost:8080/OGlewordpress/cart/"> Cart</a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link" href="http://localhost:8080/OGlewordpress/shop/"> Shop</a>
 				</li>
 			</ul>
 		</div>
 
 	</nav>
-	<header id="masthead" class="site-header">
-
-	</header><!-- #masthead -->
 	<div id="page" class="site container">
 
-		<div id="content" class="site-content">
+		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'blank-zip'); ?></a>
+
+		<header id="masthead" class="site-header">
+
+		</header><!-- #masthead -->
+
+		<div id="content" class="site-content row">
 
 		</div>
+
 
 
 		<script type="text/javascript">

@@ -14,3 +14,7 @@
 
 2019-10-02T03:01:12+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\OGlewordpress\wp-includes\widgets\class-wp-nav-menu-widget.php on line 17
 
+2019-10-02T05:27:07+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\OGlewordpress\wp-includes\widgets\class-wp-widget-recent-comments.php on line 17
+
+2019-10-02T05:30:52+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\OGlewordpress\wp-includes\functions.php on line 5568
+

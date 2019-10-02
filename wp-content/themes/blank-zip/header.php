@@ -38,7 +38,7 @@
 					<ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow">
 						<li><a href="#" class="dropdown-item"> BAGS</a></li>
 						<li><a href="#" class="dropdown-item"> POLO</a></li>
-						<li><a href="#" class="dropdown-item"> WRIST WATCH</a></li>
+						<li><a href="#" class="dropdown-item"> WATCH</a></li>
 						<li><a href="#" class="dropdown-item"> T-ShIRTS</a></li>
 
 						<li class="dropdown-divider"></li>

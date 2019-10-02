@@ -1002,11 +1002,11 @@ object {
 }
 .navbar li a{
 	font-weight: 800;
-	color: rgb(43, 44, 44) ;
+	color: #ffffff;
 }
 .navbar li a:focus, .navbar li a:hover{
 
-	color: #ffffff;
+	color: rgb(43, 44, 44) ;
 }
 .dropdown-submenu {
 	position: relative;

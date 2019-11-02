@@ -68,6 +68,7 @@ html {
 
 body {
 	margin: 0;
+
 }
 
 /**
@@ -989,6 +990,9 @@ object {
 	font-size: 20fr;
 	
 }
+span.navbar-toggler-icon{
+	color:#ffffff
+}
 .navbar-brand{
 	color:#ffffff;
 	font-family:serif;
@@ -1035,8 +1039,13 @@ object {
 	color: rgb(0, 0, 0);
 }
 .row-link{
+	
 	text-decoration: none;
 	text-align:center;
+}
+img{
+	margin-top: 5px;
+	padding: 10px,0;
 }
 /* about us */
 .entry-header{

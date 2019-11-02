@@ -16,8 +16,12 @@
 
 <footer class="footer-distributed">
 	<div class="footer-left text-center">
+		<a href="https://www.instagram.com/locals_ph/"><i class="fab fa-instagram"> </i></a>
+		|
+	  <a href="https://www.facebook.com/localsmanila/"> <i class="fab fa-facebook"></i></a>
+	  
 
-		<p class="footer-company-name">Copyright &copy; OGle.inc.2019</p>
+		<p class="footer-company-name">Copyright &copy; Locals_ph.2019</p>
 
 	</div>
 
